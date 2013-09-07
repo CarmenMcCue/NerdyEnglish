@@ -1,4 +1,5 @@
 name: Nerdy English
 markdown: redcarpet
 pygments: true
+safe: true
 permalink: /blog/:year/:month/:day/:title.html
