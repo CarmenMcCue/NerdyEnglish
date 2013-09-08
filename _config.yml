@@ -1,4 +1,6 @@
 name: Nerdy English
+description: A blog for English nerds, computer geeks, and everyone in between.
+url: http://www.nerdyenglish.com
 markdown: redcarpet
 pygments: true
 safe: true
