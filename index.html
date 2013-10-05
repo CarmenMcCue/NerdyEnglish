@@ -5,7 +5,15 @@ title: Nerdy English
 
 <div id="home">
     {% for post in site.posts %}
-	    <h2 class="post"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	    <h2 class="post">
+	    	<a href="{{ post.url }}">
+					{% if post.title_pretty == nil %}
+						{{ post.title }}
+					{% else %}
+						{{ post.title_pretty }}
+					{% endif %}
+				</a>
+			</h2>
 			<span class="post-date">{{ post.date | date_to_string }}</span>
 			<div class="post">
 	    	{{ post.content | split:'<!--break-->' | first }}
